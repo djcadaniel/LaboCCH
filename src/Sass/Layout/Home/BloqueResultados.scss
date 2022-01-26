@@ -1,0 +1,95 @@
+@import '../../Base/variables.scss';
+
+.main{
+    width:100%;
+    max-width: 2300px;
+    min-width:320px;
+    margin: 0 auto;
+    padding: 0;
+}
+.resultados{
+    width: 100%;
+    min-width: 290px;
+    padding: 3% 3%;
+    // background-color:red;
+}
+.resultados h1{
+    font-size: 3rem;
+    font-weight: $pesoTitle;
+    color: $title;
+}
+.resultados__container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding:5% 0;
+    padding-bottom: 0;
+}
+.resultados__item{
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    padding: 2% 0;
+    background-color: $cuadro;
+}
+.resultados__item img{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.resultados__item a{
+    padding: 1% 10%;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: $sizeBtn;
+    font-weight: $pesoBtn;
+    color: $textBtn;
+    background-color: $fondoBtn;
+}
+
+@media only screen and (max-width:768px){
+    .resultados__container{
+        display: flex;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .resultados__item{
+        width: 30%;
+        text-align: center;
+        border-radius: 15px;
+        padding: 2% 0;
+        background-color: $cuadro;
+    }
+}
+@media only screen and (max-width:524px){
+    .resultados__container{
+        display: flex;
+        flex-flow: row wrap;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .resultados__item{
+        width: 100%;
+        text-align: center;
+        border-radius: 15px;
+        padding: 2% 0;
+        margin-bottom: 9%;
+        background-color: $cuadro;
+    }
+    .resultados__item a{
+        border: 1px solid $cuadro;
+        padding:3% 5%;
+        margin-top: 15px;
+    }
+}
+@media only screen and (max-width:400px){
+    .resultados__container{
+        display: flex;
+        flex-flow: row wrap;
+        width: 90%;
+        margin: 0 auto;
+    }
+}

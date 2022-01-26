@@ -1,0 +1,129 @@
+@import '../../Base/variables.scss';
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width:100%;
+    max-width: 2300px;
+    min-width:320px;
+    margin: 0 auto;
+    padding: 3% 3% 0 3%;
+    background-color:$celeste;
+}
+.footer__logo{
+    width: 10%;
+    font-size: 1.2rem;
+    color: white;
+    text-align:center;
+}
+.footer__link{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+
+}
+.footer__link img{
+    height: 100%;
+    width: 100%;
+}
+.footer__link p{
+    text-align: center;
+}
+.footer__contain{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    // background-color: green;
+}
+.footer__item{
+    // background-color: red;
+}
+.footer__item h2{
+    margin-bottom: 5%;
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: #045a53;
+}
+.footer__item ul{
+    list-style: none;
+}
+.footer__item ul li a{
+    font-size: 1.4rem;
+    // font-weight: 300;
+    text-decoration: none;
+    color: $white;
+    cursor: pointer;
+}
+.footer__item:nth-child(1){
+
+}
+.redes{
+    width: 100%;
+    padding: 5% 0;
+    
+}
+.redes ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.redes ul li{
+    margin-right: 5%;
+}
+.redes ul li a i{
+    font-size:3rem;
+}
+.footer__copyRight{
+    width: 100%;
+    text-align: center;
+    padding: 1% 0 0 0;
+    font-size: 1.4rem;
+    color: white;
+}
+
+@media only screen and(max-width:850px){    
+    .footer__logo{
+        width: 30%;
+    }
+    .footer__link img{
+        width: 80%;
+    }
+    .footer__contain{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        width: 70%;
+        padding: 0 7%;
+    }
+    .footer__item{
+        width: 50%;
+        margin: 0 auto;
+        padding: 0%;
+        padding-bottom: 3%;
+    }
+}
+@media only screen and(max-width:850px){    
+    .footer__logo{
+        width: 30%;
+    }
+    .footer__link img{
+        width: 80%;
+    }
+    .footer__contain{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        width: 70%;
+        padding: 0 7%;
+    }
+    .footer__item{
+        width: 50%;
+        margin: 0 auto;
+        padding: 0%;
+        padding-bottom: 3%;
+    }
+}

@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/*Colores*/
+/*Capas*/
+/*Tamaño de Fuentes*/
+/*Peso*/
+/*Botones*/
+.calidad {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 100%;
+  min-width: 290px;
+  padding: 0 3%;
+  padding-top: 3%;
+}
+
+.calidad h1 {
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #00a89a;
+}
+
+.calidad__description {
+  width: 50%;
+}
+.calidad__description p {
+  width: 70%;
+  font-size: 1.7rem;
+  text-align: justify;
+  padding-left: 8%;
+  padding-top: 3%;
+  color: #01665e;
+}
+.calidad__description a {
+  margin-left: 45%;
+  padding: 2% 5%;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #05a99b;
+}
+
+.calidad__imagen {
+  width: 50%;
+  height: 45vh;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.calidad__imagen img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+  .calidad__description {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .calidad__description p {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 10%;
+    padding-top: 0;
+    color: #01665e;
+  }
+  .calidad__description a {
+    margin-left: 0;
+  }
+
+  .calidad__imagen {
+    width: 60%;
+    height: auto;
+  }
+
+  .calidad__imagen img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .calidad {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 5%;
+    grid-template-areas: "title" "image" "description";
+  }
+
+  .calidad h1 {
+    grid-area: title;
+    width: 100%;
+  }
+
+  .calidad__description {
+    grid-area: description;
+    width: 100%;
+    height: auto;
+  }
+  .calidad__description p {
+    width: 100%;
+    padding: 0;
+  }
+  .calidad__description a {
+    margin: 0 auto;
+  }
+
+  .calidad__imagen {
+    grid-area: image;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .calidad__imagen img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .calidad__imagen {
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}

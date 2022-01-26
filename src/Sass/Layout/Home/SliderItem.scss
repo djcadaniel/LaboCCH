@@ -1,0 +1,106 @@
+@import '../../Base/variables.scss';
+
+.tns-outer{
+    // background-color: red;
+    margin-top: 70px;
+}
+.contentSlider{
+    // height: 97vh;
+    position: relative;
+}
+.picture{
+    width: 100%;
+}
+.picture img{
+    width: 100%;
+    height: calc(100vh - 70px);
+    object-fit: cover;
+}
+
+.splide__slide--description{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color:$colorTxtSlideDark;
+    font-weight: 500;
+}
+.description__p{
+    font-size: 5rem;
+}
+.description__span{
+    font-size: 3rem;
+}
+/*===========SPLIDE-RESPONSIVE===========*/
+@media only screen and(max-width:1024px){
+    .splide__slide--description{
+        width: 55%;
+        top: 28%;
+        left: 10%;
+    }
+    .description__p{
+        font-size: 5rem;
+    }
+    .description__span{
+        font-size: 2.8rem;
+    }
+}
+@media only screen and(max-width:870px){
+    .splide__slide--description{
+        width: 55%;
+        top: 28%;
+        left: 10%;
+    }
+    .description__p{
+        font-size: 4.5rem;
+    }
+    .description__span{
+        font-size: 2.5rem;
+    }
+}
+@media only screen and(max-width:768px){
+    .splide__slide--description{
+        width: 55%;
+        top: 27%;
+        left: 10%;
+        
+    }
+    .description__p{
+        font-size: 4rem;
+    }
+    .description__span{
+        font-size: 2.3rem;
+    }
+}
+@media only screen and(max-width:728px){
+    .splide__slide--description{
+        width: 70%;
+        top: 20%;
+        left: 14.5%;
+        text-align: center;
+    }
+    .description__p{
+        font-size: 4.8rem;
+        
+    }
+    .description__span{
+        width: 100%;
+        
+        font-size: 2.3rem;
+    }
+}
+@media only screen and(max-width:400px){
+    .splide__slide--description{
+        width: 90%;
+        top: 20%;
+        left: 5%;
+    }
+    .description__p{
+        font-size: 3.5rem;
+    }
+    .description__span{
+        font-size: 2.3rem;
+    }
+}
+.tns-outer button{
+    display: block;
+}
