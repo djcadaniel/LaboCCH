@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/LaboCCH/static/css/main.dd41448b.css",
+    "main.js": "/LaboCCH/static/js/main.05e6e258.js",
+    "static/media/banner728.jpg": "/LaboCCH/static/media/banner728.7d30459dfc239090a6ca.jpg",
+    "static/media/bannervertical.jpg": "/LaboCCH/static/media/bannervertical.1b8483133b3156229caa.jpg",
+    "static/media/calidad.png": "/LaboCCH/static/media/calidad.89eab33a7c009cc9afb8.png",
+    "static/media/banner.jpg": "/LaboCCH/static/media/banner.af3365546ab5ece3fc9b.jpg",
+    "static/media/analisis.svg": "/LaboCCH/static/media/analisis.0799648da3a18f620aa80a17d625eddd.svg",
+    "static/media/banner3.jpg": "/LaboCCH/static/media/banner3.1bc973aa711be094a367.jpg",
+    "static/media/logo.png": "/LaboCCH/static/media/logo.119c223a2c930f6a091e.png",
+    "static/media/pacientesIcon.svg": "/LaboCCH/static/media/pacientesIcon.c8d24642f256a240b0f61865b3f6f1e7.svg",
+    "static/media/medicosIcon.svg": "/LaboCCH/static/media/medicosIcon.71fe26b95069efdb976959a712856989.svg",
+    "static/media/empresasIcon.svg": "/LaboCCH/static/media/empresasIcon.4b8518cb33f0ee9d1b29c8d1979f64df.svg",
+    "static/media/hospital.svg": "/LaboCCH/static/media/hospital.08ea69fc98820636d2fb37796abe20c5.svg",
+    "static/media/medico.svg": "/LaboCCH/static/media/medico.3e2623420f2c29ba9f778d020c2a9ef5.svg",
+    "index.html": "/LaboCCH/index.html",
+    "static/media/boriquin.svg": "/LaboCCH/static/media/boriquin.6148d7a60d275628e6d3905775fd5ae9.svg",
+    "main.dd41448b.css.map": "/LaboCCH/static/css/main.dd41448b.css.map",
+    "main.05e6e258.js.map": "/LaboCCH/static/js/main.05e6e258.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd41448b.css",
+    "static/js/main.05e6e258.js"
+  ]
+}
