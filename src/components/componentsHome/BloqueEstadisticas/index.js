@@ -10,16 +10,16 @@ function BloqueEstadisticas() {
         <section className="estadisticas">
             <div className="estadisticas__flex">
                 <div className="estadisticas__container">
-                    <div className="estadisticas__item">
+                    <div className="estadisticas__item" data-aos="flip-up">
                         <div className="estadisticas__item--img">
                             <img src={medico} alt="" />
                         </div>
-                        <div className="estadisticas__item--description">
+                        <div className="estadisticas__item--description" >
                             <span className="description__number">161</span> <br />
                             <span className="description__text">ESPECIALISTAS</span>
                         </div>
                     </div>
-                    <div className="estadisticas__item">
+                    <div className="estadisticas__item" data-aos="flip-up">
                         <div className="estadisticas__item--img">
                             <img src={hospital} alt="" />
                         </div>
@@ -28,20 +28,20 @@ function BloqueEstadisticas() {
                             <span className="description__text">PACIENTES</span>
                         </div>
                     </div>
-                    <div className="estadisticas__item">
+                    <div className="estadisticas__item" data-aos="flip-up">
                         <div className="estadisticas__item--img">
                             <img src={hospital} alt="" />
                         </div>
-                        <div className="estadisticas__item--description">
+                        <div className="estadisticas__item--description" >
                             <span className="description__number">45</span> <br />
                             <span className="description__text">ESPECIALIDADES</span>
                         </div>
                     </div>
-                    <div className="estadisticas__item">
+                    <div className="estadisticas__item" data-aos="flip-up">
                         <div className="estadisticas__item--img">
                             <img src={botiquin} alt="" />
                         </div>
-                        <div className="estadisticas__item--description">
+                        <div className="estadisticas__item--description" >
                             <span className="description__number">78</span> <br />
                             <span className="description__text">SERVICIOS</span>
                         </div>

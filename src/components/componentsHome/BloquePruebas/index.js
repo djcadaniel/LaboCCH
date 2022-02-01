@@ -6,8 +6,8 @@ function BloquePruebas() {
     return(
         <section className="newPruebas">
             <h1>Nuevas pruebas</h1>
-            <div className="newPruebas__contain">
-                <div className="pruebas__item">
+            <div className="newPruebas__contain" data-aos="fade-up">
+                <div className="pruebas__item" data-aos="flip-left">
                     <p>Panel completo <br />
                         Antisfosfolípidos</p>
                         <a href="">Ver más</a>
@@ -15,7 +15,7 @@ function BloquePruebas() {
                         <img src={adn} alt="" />
                     </div>
                 </div>
-                <div className="pruebas__item">
+                <div className="pruebas__item" data-aos="flip-left">
                     <p>Panel completo <br />
                         Antisfosfolípidos</p>
                         <a href="">Ver más</a>
@@ -23,7 +23,7 @@ function BloquePruebas() {
                         <img src={adn} alt="" />
                     </div>
                 </div>
-                <div className="pruebas__item">
+                <div className="pruebas__item" data-aos="flip-left">
                     <p>Panel completo <br />
                         Antisfosfolípidos</p>
                         <a href="">Ver más</a>

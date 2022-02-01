@@ -17,6 +17,9 @@ footer{
     color: white;
     text-align:center;
 }
+.footer__logo p{
+    font-size: 1.4rem;
+}
 .footer__link{
     display: block;
     width: 100%;
@@ -45,18 +48,24 @@ footer{
 .footer__item h2{
     margin-bottom: 5%;
     font-size: 1.9rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #045a53;
 }
 .footer__item ul{
     list-style: none;
 }
+.footer__item ul li{
+    margin-bottom: 5px;
+}
 .footer__item ul li a{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     // font-weight: 300;
     text-decoration: none;
     color: $white;
     cursor: pointer;
+}
+.footer__item ul li a i{
+    font-size: 2rem;
 }
 .footer__item:nth-child(1){
 
@@ -75,7 +84,7 @@ footer{
     margin-right: 5%;
 }
 .redes ul li a i{
-    font-size:3rem;
+    font-size:4rem;
 }
 .footer__copyRight{
     width: 100%;
@@ -83,6 +92,7 @@ footer{
     padding: 1% 0 0 0;
     font-size: 1.4rem;
     color: white;
+    padding-bottom: 1%;
 }
 
 @media only screen and(max-width:850px){    
@@ -125,5 +135,43 @@ footer{
         margin: 0 auto;
         padding: 0%;
         padding-bottom: 3%;
+    }
+}
+@media only screen and(max-width:530px){    
+    .footer__logo{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .footer__logo p{
+        font-size: 1.5rem;
+    }
+    .footer__link img{
+        width: 20%;
+    }
+    .footer__contain{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        width: 70%;
+        padding: 0 7%;
+    }
+    .footer__item{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0%;
+        padding-bottom: 10%;
+        text-align:center;
+        // background-color: red;
+    }
+    .footer__item h2{
+        margin-bottom: 0;
+    }
+    .footer__item ul li a{
+        font-size: 1.6rem;
+    };
+    .redes ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

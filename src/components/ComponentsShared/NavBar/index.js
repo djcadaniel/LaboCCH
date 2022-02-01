@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink} from 'react-router-dom';
 
 import '../../../Css/Layout//shared/NavBar.css'
-import logo from'../../../img/Logo/logo.jpeg'
+import logo from '../../../img/Logo/logo.png'
 
 
 
@@ -20,10 +20,15 @@ function NavBar(){
     return(
             <header className="header">
                 <nav className="header__nav">
-                    <NavLink className="nav__logo" to="/">
-                        <img className="nav__logo--img" src={logo} alt="" />
-                        Laboratorio CCH
-                    </NavLink>
+                    <div className="nav__logo">
+                        <NavLink className="nav__logo" to="/">
+                            <img className="nav__logo--img" src={logo} alt="" />
+                        </NavLink>
+                        <div className="logo__title">
+                            <span className="logo__title--text">Laboratorio Clínico</span>
+                            <span className="logo__title--text">Tu Clínica de Siempre</span>
+                        </div>
+                    </div>
                     <button id="button__menu" 
                         className="nav__menu--hamburguesa "
                         onClick={showMenu}

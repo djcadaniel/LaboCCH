@@ -6,9 +6,9 @@ function BloqueAnalisis() {
     return(
         <section className="analisis" id="analisis">
             <h1>Análisis</h1>
-            <div className="analisis__container">
-                <div className="analisis__texto">
-                    <p>Consulta los tipo de análisis que tenemos</p>
+            <div className="analisis__container" data-aos="fade-up">
+                <div className="analisis__texto" data-aos="flip-left">
+                    <p>Tenemos gran cantidad de análisis, explora los que deseas saber:</p>
                     <a href="">Ver</a>
                     <div className="analisis__item">
                         <img src={anali} alt="" />

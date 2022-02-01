@@ -12,7 +12,7 @@
 
 .analisis h1 {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #00a89a;
 }
 
@@ -30,7 +30,6 @@
   height: 150px;
   border-radius: 15px;
   background-color: #05a99b;
-  background-color: #00C4B3;
 }
 
 .analisis__texto p {

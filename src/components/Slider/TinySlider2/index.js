@@ -10,10 +10,10 @@ import { SliderItem } from "../SliderItem";
 function TinySlider2(){
 
     const images =[
-        {image1: slideA1, image2:slideA2, image3:slideA3},
-        {image1: slideA1, image2:slideA2, image3:slideA3},
-        {image1: slideA1, image2:slideA2, image3:slideA3},
-        {image1: slideA1, image2:slideA2, image3:slideA3}
+        {image1: slideA1, image2:slideA2, image3:slideA3, description:"Desde 2014 cuidando de ti y tu familia", description2:"Trayectoria de confianza"},
+        {image1: slideA1, image2:slideA2, image3:slideA3, description:"Explora  más de 3000 análisis diferentes",description2:"Trayectoria de confianza"},
+        {image1: slideA1, image2:slideA2, image3:slideA3, description:"Con un equipo de profesionales a tu servicio",description2:"Trayectoria de confianza"},
+        {image1: slideA1, image2:slideA2, image3:slideA3, description:"A la vanguardia de la tencología",description2:"Trayectoria de confianza"}
     ]
 
     const settings={
@@ -45,6 +45,8 @@ function TinySlider2(){
                         src1={item.image1}
                         src2={item.image2}
                         src3={item.image3}
+                        description={item.description}
+                        description2={item.description2}
                     />
                 ))}
             </TinySlider>

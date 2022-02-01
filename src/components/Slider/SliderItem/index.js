@@ -21,12 +21,11 @@ function SliderItem(props){
                 />
             </picture>
             <div className="splide__slide--description">
-                <p className="description__p">
-                    Desde 2014 cuidando <br />
-                    de ti y tu familia
+                <p className="description__p" data-aos="fade-right">
+                    {props.description}
                 </p>
                 <span className="description__span">
-                    Trayectoria de confianza
+                    {props.description2}
                 </span>
             </div>
         </div>
