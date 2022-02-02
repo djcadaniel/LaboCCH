@@ -21,7 +21,6 @@ function App() {
     <Router>
       <ScrollTop>
         <NavBar />
-        <Route path='/' element={<Home />} />
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/analisis' element={<Analisis />} />
