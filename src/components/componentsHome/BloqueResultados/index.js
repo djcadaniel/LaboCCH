@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import '../../../Css/Layout/Home/BloqueResultados.css'
 import pac from '../../../../src/img/Resultados/pacientesIcon.svg'
 import doc from '../../../../src/img/Resultados/medicosIcon.svg'
@@ -12,16 +12,16 @@ function BloqueResultados() {
                 <div className="resultados__item" data-aos="flip-left">
                     <img src={pac} alt="" /><br />
                     <div className="item__description">
-                        <a href="">Pacientes</a>
+                        <a href="/#">Pacientes</a>
                     </div>
                 </div>
                 <div className="resultados__item" data-aos="flip-left">
                     <img src={doc} alt="" /><br />
-                    <a href="">Doctores</a>
+                    <a href="/#">Doctores</a>
                 </div>
                 <div className="resultados__item" data-aos="flip-left">
                     <img src={emp} alt="" /><br />
-                    <a href="">Empresas</a>
+                    <a href="/#">Empresas</a>
                 </div>
             </div>
         </section>

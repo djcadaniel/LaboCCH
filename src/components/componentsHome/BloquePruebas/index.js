@@ -10,7 +10,7 @@ function BloquePruebas() {
                 <div className="pruebas__item" data-aos="flip-left">
                     <p>Panel completo <br />
                         Antisfosfolípidos</p>
-                        <a href="">Ver más</a>
+                        <a href="/#">Ver más</a>
                     <div className="pruebas__item--icon">
                         <img src={adn} alt="" />
                     </div>
@@ -18,7 +18,7 @@ function BloquePruebas() {
                 <div className="pruebas__item" data-aos="flip-left">
                     <p>Panel completo <br />
                         Antisfosfolípidos</p>
-                        <a href="">Ver más</a>
+                        <a href="/#">Ver más</a>
                     <div className="pruebas__item--icon">
                         <img src={adn} alt="" />
                     </div>
@@ -26,7 +26,7 @@ function BloquePruebas() {
                 <div className="pruebas__item" data-aos="flip-left">
                     <p>Panel completo <br />
                         Antisfosfolípidos</p>
-                        <a href="">Ver más</a>
+                        <a href="/#">Ver más</a>
                     <div className="pruebas__item--icon">
                         <img src={adn} alt="" />
                     </div>

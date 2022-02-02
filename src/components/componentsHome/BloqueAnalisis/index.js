@@ -9,7 +9,7 @@ function BloqueAnalisis() {
             <div className="analisis__container" data-aos="fade-up">
                 <div className="analisis__texto" data-aos="flip-left">
                     <p>Tenemos gran cantidad de análisis, explora los que deseas saber:</p>
-                    <a href="">Ver</a>
+                    <a href="/#">Ver</a>
                     <div className="analisis__item">
                         <img src={anali} alt="" />
                     </div>
