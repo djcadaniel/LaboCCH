@@ -34,6 +34,7 @@
   margin-top: -15%;
   color: #01665e;
 }
+
 .calidad__description a {
   margin-left: 8%;
   padding: 2% 10%;
@@ -42,6 +43,14 @@
   text-decoration: none;
   color: white;
   background-color: #05a99b;
+  transition-duration: 0.3s;
+  transition-property: border, color, background-color;
+}
+
+.calidad__description a:hover {
+  border: 1px solid #05a99b;
+  color: #01665e;
+  background-color: white;
 }
 
 .calidad__imagen {

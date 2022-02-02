@@ -56,10 +56,6 @@
   width: 100%;
 }
 
-.item__description:hover {
-  transform: rotateX(90deg) translateY(-22px);
-}
-
 .item__description a {
   width: 100%;
   padding: 2% 10%;
@@ -70,6 +66,14 @@
   border-radius: 5px;
   color: #007067;
   background-color: #CFEAEA;
+  transition-duration: 0.3s;
+  transition-property: border, color, background-color;
+}
+
+.item__description a:hover {
+  border: 1px solid white;
+  color: white;
+  background-color: #05a99b;
 }
 
 @media only screen and (max-width: 768px) {

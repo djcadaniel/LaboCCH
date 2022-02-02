@@ -72,6 +72,12 @@ footer {
   text-decoration: none;
   color: white;
   cursor: pointer;
+  transition-duration: 1s;
+  transition-property: text-decoration;
+}
+
+.footer__item ul li a:hover {
+  text-decoration: underline;
 }
 
 .footer__item ul li a i {

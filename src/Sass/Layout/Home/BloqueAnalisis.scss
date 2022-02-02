@@ -45,6 +45,13 @@
     font-weight: $pesoBtn;
     color:$textBtn;
     background-color: #CFEAEA;
+    transition-duration: .3s;
+    transition-property:border,color, background-color ;
+}
+.analisis__texto a:hover{
+    border: 1px solid white;
+    color: $white;
+    background-color: $cuadro;
 }
 .analisis__item{  
     position: absolute;

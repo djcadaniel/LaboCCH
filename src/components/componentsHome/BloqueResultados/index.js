@@ -17,11 +17,15 @@ function BloqueResultados() {
                 </div>
                 <div className="resultados__item" data-aos="flip-left">
                     <img src={doc} alt="" /><br />
-                    <a href="/#">Doctores</a>
+                    <div className="item__description">
+                        <a href="/#">Doctores</a>
+                    </div>
                 </div>
                 <div className="resultados__item" data-aos="flip-left">
                     <img src={emp} alt="" /><br />
-                    <a href="/#">Empresas</a>
+                    <div className="item__description">
+                        <a href="/#">Empresas</a>
+                    </div>
                 </div>
             </div>
         </section>

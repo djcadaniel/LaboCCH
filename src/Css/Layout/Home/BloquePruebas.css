@@ -57,6 +57,13 @@
   font-weight: 500;
   color: #007067;
   background-color: #CFEAEA;
+  transition-duration: 0.3s;
+  transition-property: border, color, background-color;
+}
+.pruebas__item a:hover {
+  border: 1px solid white;
+  color: white;
+  background-color: #05a99b;
 }
 
 .pruebas__item:nth-child(3) {

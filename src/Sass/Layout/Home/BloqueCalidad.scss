@@ -27,17 +27,23 @@
         margin-top: -15%;
         color: $colorParrafoDark;
     }
-    a{
-        margin-left: 8%;
-        padding:2% 10%;
-        font-size: $sizeBtn;
-        border-radius: 10px;
-        text-decoration: none;
-        color: white;
-        background-color: $cuadro;
-    }
 }
-
+.calidad__description a{
+    margin-left: 8%;
+    padding:2% 10%;
+    font-size: $sizeBtn;
+    border-radius: 10px;
+    text-decoration: none;
+    color: $white;
+    background-color: $cuadro;
+    transition-duration: .3s;
+    transition-property:border,color, background-color ;
+}
+.calidad__description a:hover{
+    border: 1px solid $cuadro;
+    color: $dark;
+    background-color: $white;
+}
 .calidad__imagen{
     width: 50%;
     height: 45vh;

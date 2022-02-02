@@ -6,7 +6,7 @@ function Footer() {
     return(
         <footer>
             <div className="footer__logo">
-                <a className="footer__link" href="./index.html">
+                <a className="footer__link" href="/">
                     <img src={logo} alt="" /><br />
                 </a>
                 <p>Laboratorio Clínico</p>

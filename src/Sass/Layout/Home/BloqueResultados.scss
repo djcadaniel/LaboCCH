@@ -47,7 +47,7 @@
     width: 100%;
 }
 .item__description:hover{
-    transform: rotateX(90deg) translateY(-22px);
+    
 }
 .item__description a{
     width: 100%;
@@ -59,7 +59,13 @@
     border-radius: 5px;
     color: $textBtn;
     background-color: $fondoBtn;
-
+    transition-duration: .3s;
+    transition-property:border,color, background-color ;
+}
+.item__description a:hover{
+    border: 1px solid white;
+    color: $white;
+    background-color: $cuadro;
 }
 @media only screen and (max-width:768px){
     .resultados__container{
