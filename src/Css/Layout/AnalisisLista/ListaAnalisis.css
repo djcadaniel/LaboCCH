@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/*Colores*/
+/*Capas*/
+/*Tamaño de Fuentes*/
+/*Peso*/
+/*Botones*/
+.analisisLista {
+  display: flex;
+  width: 100%;
+  min-width: 320px;
+  height: calc(100vh - 70px);
+  margin: 0;
+  padding: 0;
+}
+
+/*MENU DE ANALISIS*/
+.analisis__menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem;
+  width: 20%;
+  padding: 2rem 2rem;
+  overflow-y: scroll;
+}
+
+.menu__item--letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  aspect-ratio: 1/1;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: #05a99b;
+  margin: auto auto;
+  transition-property: border, background-color;
+  transition-duration: 0.2s;
+}
+
+.menu__item--letter:hover {
+  border: 3px solid #05a99b;
+  background-color: white;
+}
+
+.menu__item--letter p {
+  font-size: 3rem;
+  color: white;
+  transition-property: color;
+  transition-duration: 0.2s;
+}
+
+.menu__item--letter:hover p {
+  color: #05a99b;
+}
+
+/*CONTANEDOR DE ANALISIS --DETALLES*/
+.analisis__contain {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem;
+  background-color: #05a99b;
+}
+
+.analisis__contain h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: white;
+}
+
+.contain__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.contain__input label {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin-right: 1.5rem;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.contain__input label p {
+  margin-right: 1.6rem;
+}
+
+.contain__input--search {
+  width: 100%;
+  height: 3.8rem;
+  border-radius: 5px;
+  border-style: none;
+  outline: none;
+  padding: 0 1.5rem;
+}
+
+.contain__input--input {
+  width: 20%;
+}
+
+.contain__frame {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  height: 60vh;
+  font-size: 1.6rem;
+  background-color: #048c80;
+  overflow-y: scroll;
+}
+
+.frame__analisis h2 {
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  width: 100%;
+  color: #0b6666;
+  background-color: #04d1c0;
+}
+
+.frame__analisis p {
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.frame__info {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.frame__info h2 {
+  width: 100%;
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  width: 100%;
+  color: #0b6666;
+  background-color: #04d1c0;
+}
+
+.frame__info--btn {
+  width: 100%;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0b6666;
+}
+
+.frame__info--btn a {
+  padding: 0.3rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: #04d1c0;
+}

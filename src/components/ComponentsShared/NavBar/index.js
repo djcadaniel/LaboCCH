@@ -16,7 +16,12 @@ function NavBar(){
     const showItemMenu=()=>{
     setItemMenu(!itemMenu)
     setMenu(!Menu)
-    } 
+    }
+    // const getPosition = ()=>{
+    //     var position = window.scrollTo(0,647);
+    //     console.log(position)
+    // }
+
     return(
             <header className="header">
                 <nav className="header__nav">
@@ -46,7 +51,7 @@ function NavBar(){
                                 Inicio
                         </NavLink>
                         <NavLink className={` nav__menu--item ${itemMenu ? document.getElementById("menu").classList.remove("visible") : "hola"}`}
-                            to='/resultados'
+                            to="/resultados"
                             onClick={showItemMenu}
                         >
                             <i className="fas fa-book-medical"></i> 
@@ -59,13 +64,13 @@ function NavBar(){
                             <i className="fas fa-user-md"></i> 
                                 Análisis
                         </NavLink>
-                        <a className={` nav__menu--item ${itemMenu ? document.getElementById("menu").classList.remove("visible") : "hola"}`}
+                        <NavLink className={` nav__menu--item ${itemMenu ? document.getElementById("menu").classList.remove("visible") : "hola"}`}
                             onClick={showItemMenu}
-                            href="#sede"
+                            to="/sede"
                         >
                             <i className="fas fa-map-marker-alt"></i> 
                                 Sede
-                        </a>
+                        </NavLink>
                     </div>
                 </nav>
                 {/* <Outlet /> */}

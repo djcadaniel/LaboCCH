@@ -1,39 +1,9 @@
 import React from "react";
+import { BloqueResultados } from "../../components/componentsHome/BloqueResultados";
 
 function Resultados() {
     return(
-        <div>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-            <p>Resultados</p>
-        </div>
-        
+        <BloqueResultados />
     )
 }
 

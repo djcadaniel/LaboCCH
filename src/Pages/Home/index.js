@@ -8,6 +8,7 @@ import { BloquePruebas } from '../../components/componentsHome/BloquePruebas';
 import { BloqueSede } from '../../components/componentsHome/BloqueSede';
 
 function Home() {
+
   return(
     <div>
         <TinySlider2 />

@@ -2,7 +2,7 @@
 
 .tns-outer{
     // background-color: red;
-    margin-top: 70px;
+    margin-top: 0px;
 }
 .contentSlider{
     // height: 97vh;
@@ -13,6 +13,7 @@
 }
 .picture img{
     width: 100%;
+    // height: calc(100vh - 70px);
     height: calc(100vh - 70px);
     object-fit: cover;
 }
