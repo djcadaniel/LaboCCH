@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import '../../../Css/Layout/Home/BloqueResultados.css'
 import pac from '../../../../src/img/Resultados/pacientesIcon.svg'
 import doc from '../../../../src/img/Resultados/medicosIcon.svg'
@@ -13,19 +12,19 @@ function BloqueResultados() {
                 <div className="resultados__item" data-aos="flip-left">
                     <img src={pac} alt="" /><br />
                     <div className="item__description">
-                        <a href="https://cch.results.ingenius.online" target="_blank">Pacientes</a>
+                        <a href="https://cch.results.ingenius.online" target="_blank" rel="noopener noreferrer">Pacientes</a>
                     </div>
                 </div>
                 <div className="resultados__item" data-aos="flip-left">
                     <img src={doc} alt="" /><br />
                     <div className="item__description">
-                        <a href="https://cch.results.ingenius.online" target="_blank">Doctores</a>
+                        <a href="https://cch.results.ingenius.online" target="_blank" rel="noopener noreferrer">Doctores</a>
                     </div>
                 </div>
                 <div className="resultados__item" data-aos="flip-left">
                     <img src={emp} alt="" /><br />
                     <div className="item__description">
-                        <a href="https://cch.results.ingenius.online" target="_blank">Empresas</a>
+                        <a href="https://cch.results.ingenius.online" target="_blank" rel="noopener noreferrer">Empresas</a>
                     </div>
                 </div>
             </div>

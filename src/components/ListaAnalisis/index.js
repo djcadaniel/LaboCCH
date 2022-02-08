@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import '../../Css/Layout/AnalisisLista/ListaAnalisis.css'
-import { isCursorAtStart } from "@testing-library/user-event/dist/utils";
+// import { isCursorAtStart } from "@testing-library/user-event/dist/utils";
  
 function ListaAnalisis() {
 
@@ -9,21 +9,22 @@ function ListaAnalisis() {
         'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'
     ]
     
-    // const [searchValue, setSearchValue] = React.useState('')
-        const [analisis, setAnalisis] = useState([])
-        
-        useEffect(()=>{
-            const analisis2 = async ()=>{
-                try{
-                    const resAnalisis = await axios("https://jsonplaceholder.typicode.com/users/");
-                    setAnalisis(resAnalisis.data)
-                    console.log(resAnalisis.data)
-                }catch(err){
-                    console.error(err)
-                }
-            }
-            analisis2();
-        }, [setAnalisis])
+    const [analisis, setAnalisis] = useState([])
+    
+    useEffect(()=>{
+        const getAnalisis = async () => {
+            const resAnalisis = await axios.get("https://jsonplaceholder.typicode.com/users/");
+            setAnalisis(resAnalisis.data)
+        }
+        getAnalisis();
+    }, [])
+
+    const showList = analisis.map((item) => {
+        return <div key={item.id}>
+            <h4>Nombre: { item.name }</h4>
+            <p>Usuario: { item.username }</p>
+        </div>
+    })
 
     return(
         <section className="analisisLista">
@@ -46,11 +47,7 @@ function ListaAnalisis() {
                 <div className="contain__frame">
                         <div className="frame__analisis">
                             <h2>Análisis</h2>
-                            {analisis.map(item =>{
-                                <div key={item.index}>
-                                    <p>{item.name}</p>
-                                </div>
-                            })}
+                            { showList }
                         </div>
                         <div className="frame__info">
                             <h2>Información</h2>
