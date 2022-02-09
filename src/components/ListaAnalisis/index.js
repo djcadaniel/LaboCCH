@@ -36,7 +36,7 @@ function ListaAnalisis() {
             <div className="analisis__menu">
                     {letters.map((item,index)=>(
                         <div className="menu__item--letter" key={index}>
-                            <a href="#"><p >{item}</p></a>
+                            <a href="#/"><p >{item}</p></a>
                         </div>
                     ))}
             </div>
@@ -58,12 +58,12 @@ function ListaAnalisis() {
                             <h2>Información</h2>
                             <div className="frame__info--btn">
                                 <a                            
-                                    href="#"
+                                    href="#/"
                                 >Ver</a>
                             </div>
                             <div className="frame__info--btn">
                                 <a                            
-                                    href="#"
+                                    href="#/"
                                 >Ver</a>
                             </div>
                         </div>
