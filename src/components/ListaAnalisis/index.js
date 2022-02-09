@@ -10,20 +10,25 @@ function ListaAnalisis() {
     ]
     
     const [analisis, setAnalisis] = useState([])
-    
     useEffect(()=>{
         const getAnalisis = async () => {
-            const resAnalisis = await axios.get("https://jsonplaceholder.typicode.com/users/");
-            setAnalisis(resAnalisis.data)
+            try{
+                const resAnalisis = await axios("https://jsonplaceholder.typicode.com/users/");
+                setAnalisis(resAnalisis.data)
+            }catch(err){
+                console.log(err)
+            }
         }
-        getAnalisis();
-    }, [])
+            getAnalisis();
+        }, [])
+        console.log(analisis)
 
-    const showList = analisis.map((item) => {
-        return <div key={item.id}>
-            <h4>Nombre: { item.name }</h4>
-            <p>Usuario: { item.username }</p>
-        </div>
+    const showAnalisis = analisis.map((item)=>{
+        return(
+            <div key={item.id}>
+                <p>{item.name}</p>
+            </div>
+        )
     })
 
     return(
@@ -47,7 +52,7 @@ function ListaAnalisis() {
                 <div className="contain__frame">
                         <div className="frame__analisis">
                             <h2>Análisis</h2>
-                            { showList }
+                            {showAnalisis}
                         </div>
                         <div className="frame__info">
                             <h2>Información</h2>
