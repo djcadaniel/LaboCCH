@@ -97,8 +97,10 @@
     overflow-y: scroll;
 }
 .frame__analisis{
+    position: relative;
 }
 .frame__analisis h2{
+    
     padding: .5rem 2rem;
     font-size: 2rem;
     width:100%;

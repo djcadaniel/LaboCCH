@@ -2,14 +2,19 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import '../../Css/Layout/AnalisisLista/ListaAnalisis.css'
 // import { isCursorAtStart } from "@testing-library/user-event/dist/utils";
- 
-function ListaAnalisis() {
 
-    const letters = [
-        'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'
-    ]
+const defaultLetters = [
+    'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'
+]
+
+function ListaAnalisis() {
     
-    const [analisis, setAnalisis] = useState([])
+    const [analisis, setAnalisis] = useState([]);
+
+    const [letters, setLetters] = useState(defaultLetters);
+    const [searchValue, setSearchValue] = useState('');
+    
+    
     useEffect(()=>{
         const getAnalisis = async () => {
             try{
@@ -21,15 +26,23 @@ function ListaAnalisis() {
         }
             getAnalisis();
         }, [])
-        console.log(analisis)
 
-    const showAnalisis = analisis.map((item)=>{
-        return(
-            <div key={item.id}>
-                <p>{item.name}</p>
-            </div>
-        )
-    })
+    const onSearchValueChange = (event) =>{
+        console.log(event.target.value)
+        setSearchValue(event.target.value)
+    }
+
+    let searchedAnalisis =[];
+
+    if(!searchValue.length >=1){
+        searchedAnalisis = analisis;
+    }else{
+        searchedAnalisis = analisis.filter(item => {
+            const itemText = item.name.toLowerCase();
+            const searchText = searchValue.toLowerCase();
+            return itemText.includes(searchText)
+        })
+    }
 
     return(
         <section className="analisisLista">
@@ -45,26 +58,36 @@ function ListaAnalisis() {
                 <form className="contain__input">
                     <label>
                         <p> Buscar: </p>
-                        <input className="contain__input--search" type="text" placeholder="Ingresar..."/>
+                        <input 
+                            className="contain__input--search" 
+                            type="text" 
+                            placeholder="Ingresar..."
+                            onChange={onSearchValueChange}
+                            value={searchValue}
+                        />
                     </label>
-                    <input className="contain__input--input" type="submit" value="enviar" />
                 </form>
                 <div className="contain__frame">
                         <div className="frame__analisis">
                             <h2>Análisis</h2>
-                            {showAnalisis}
+                            {
+                                searchedAnalisis.map(item=>(
+                                    <div key={item.id}>
+                                        <p>{item.name}</p>
+                                    </div>
+                                ))
+                            }
                         </div>
                         <div className="frame__info">
                             <h2>Información</h2>
                             <div className="frame__info--btn">
-                                <a                            
-                                    href="#/"
-                                >Ver</a>
-                            </div>
-                            <div className="frame__info--btn">
-                                <a                            
-                                    href="#/"
-                                >Ver</a>
+                            {
+                                searchedAnalisis.map(item=>(
+                                    <div key={item.id}>
+                                        <p>{item.name}</p>
+                                    </div>
+                                ))
+                            }
                             </div>
                         </div>
                 </div>
