@@ -37,12 +37,12 @@
   transition-duration: 0.2s;
 }
 
-.menu__item--letter:hover {
+.menu__item--letter:hover button {
   border: 3px solid #05a99b;
   background-color: white;
 }
 
-.menu__item--letter a {
+.menu__item--letter button {
   width: 100%;
   text-decoration: none;
   text-align: center;
@@ -51,9 +51,12 @@
   transition-property: color;
   transition-duration: 0.2s;
   cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #05a99b;
 }
 
-.menu__item--letter:hover a {
+.menu__item--letter:hover button {
   color: #05a99b;
 }
 
@@ -161,7 +164,7 @@
   padding: 0.5rem 0;
 }
 
-.frame__info--btn a {
+.frame__info--btn button {
   padding: 0.3rem 1.5rem;
   border-radius: 2px;
   text-decoration: none;

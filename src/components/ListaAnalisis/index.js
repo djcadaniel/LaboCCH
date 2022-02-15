@@ -61,7 +61,7 @@ function ListaAnalisis() {
   const firstLetter = (letter) =>{
     const minLetter = letter.toLowerCase();
     const firstNameLetter = db.filter((e) =>
-      e.name.charAt(0).toLowerCase() == minLetter
+      e.name.charAt(0).toLowerCase() === minLetter
     )
     setAnalisis([...firstNameLetter])
   }
@@ -71,9 +71,9 @@ function ListaAnalisis() {
       <div className="analisis__menu">
         {defaultLetters.map((item, index) => (
           <div className="menu__item--letter" key={index}>
-            <a type="submit" onClick={() => firstLetter(item)}>
+            <button onClick={() => firstLetter(item)}>
               {item}
-            </a>
+            </button>
           </div>
         ))}
       </div>
@@ -104,10 +104,10 @@ function ListaAnalisis() {
             <div className="frame__info--btn">
               {analisis.map((item) => (
                 <div className="frame__info--ver" key={item.id}>
-                  <a>
+                  <button>
                     <i className="fa-solid fa-eye"></i>
                     Ver
-                  </a>
+                  </button>
                 </div>
               ))}
             </div>
