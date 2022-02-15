@@ -42,14 +42,18 @@
   background-color: white;
 }
 
-.menu__item--letter p {
+.menu__item--letter a {
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
   font-size: 3rem;
   color: white;
   transition-property: color;
   transition-duration: 0.2s;
+  cursor: pointer;
 }
 
-.menu__item--letter:hover p {
+.menu__item--letter:hover a {
   color: #05a99b;
 }
 
@@ -116,7 +120,7 @@
 }
 
 .frame__analisis h2 {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 3rem;
   font-size: 2rem;
   width: 100%;
   color: #0b6666;
@@ -124,7 +128,7 @@
 }
 
 .frame__analisis p {
-  padding: 1rem 2rem;
+  padding: 1.5rem 3rem;
   color: white;
 }
 
@@ -136,6 +140,7 @@
 .frame__info h2 {
   width: 100%;
   padding: 0.5rem 2rem;
+  text-align: center;
   font-size: 2rem;
   width: 100%;
   color: #0b6666;
@@ -152,10 +157,27 @@
   color: #0b6666;
 }
 
+.frame__info--ver {
+  padding: 0.5rem 0;
+}
+
 .frame__info--btn a {
-  padding: 0.3rem 2rem;
-  border-radius: 5px;
+  padding: 0.3rem 1.5rem;
+  border-radius: 2px;
   text-decoration: none;
-  color: white;
+  color: #0b6666;
   background-color: #04d1c0;
+  cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+}
+
+.frame__info--btn a:hover {
+  color: white;
+  background-color: #0b6666;
+}
+
+.frame__info--btn a i {
+  margin-right: 1rem;
+  font-size: 1.5rem;
 }
