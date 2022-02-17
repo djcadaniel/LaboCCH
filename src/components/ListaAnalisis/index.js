@@ -80,13 +80,6 @@ function ListaAnalisis() {
   const closeModal = () => {
       setVisibilityModal(false);
     };
-  
-  const fillElements = () => {
-    const all = db.map(item =>{
-      return item.name
-    })
-    setAnalisis([...all])
-  }
 
   return (
     <section className="analisisLista">
