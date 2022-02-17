@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/*Colores*/
+/*Capas*/
+/*Tamaño de Fuentes*/
+/*Peso*/
+/*Botones*/
+.modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /*funcion createPortals de react*/
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__dialog {
+  position: relative;
+  width: 25%;
+  height: 60%;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.modal__open {
+  display: flex;
+}
+
+.modal__buttonClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  margin: 1rem 1rem 0 0;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #05a99b;
+  outline: none;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+}
+
+.modal__buttonClose:hover {
+  background-color: #1ce6d5;
+}
+
+.modal__buttonClose i {
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .modal__dialog {
+    width: 35%;
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .modal__dialog {
+    width: 40%;
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .modal__dialog {
+    width: 45%;
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .modal__dialog {
+    width: 55%;
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .modal__dialog {
+    width: 65%;
+    height: 45%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .modal__dialog {
+    width: 75%;
+    height: 45%;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .modal__dialog {
+    width: 90%;
+    height: 45%;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .modal__dialog {
+    width: 95%;
+    height: 45%;
+  }
+}

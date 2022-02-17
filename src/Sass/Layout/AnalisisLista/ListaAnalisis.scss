@@ -27,24 +27,30 @@
     text-decoration:none;
     background-color: $cuadro;
     margin: auto auto;
-    transition-property: border, background-color;
-    transition-duration: .2s;
+    transition-property: background-color;
+    transition-duration: .5s;
 }
 .menu__item--letter:hover{
     border: 3px solid $cuadro;
     background-color: $white;
 }
-.menu__item--letter a{
+.menu__item--letter button{
     width: 100%;
+    height: 100%;
     text-decoration: none;
     text-align: center;
     font-size: 3rem;
     color: $white;
     transition-property: color;
-    transition-duration: .2s;
+    transition-duration: .3s;
+    border: none;
+    border-radius: 3px;
+    background-color: $cuadro;
+    cursor: pointer;
 }
-.menu__item--letter:hover a{
+.menu__item--letter:hover button{
     color: $cuadro;
+    background-color: $white;
 }
 
 /*CONTANEDOR DE ANALISIS --DETALLES*/
@@ -52,13 +58,13 @@
     width: 80%;
     margin: 0 auto;
     padding: 3rem;
-    background-color: $cuadro;
+    background-color: $white;
 
 }
 .analisis__contain h1{
     text-align: center;
-    font-size:2.8rem;
-    color: $white;
+    font-size:2.5rem;
+    color: $dark;
 }
 .contain__input{
     display: flex;
@@ -76,7 +82,9 @@
     color: $white;
 }
 .contain__input label p{
-    margin-right: 1.6rem;
+    margin-right: 1.7rem;
+    font-weight: 600;
+    color: $dark;
 }
 .contain__input--search{
     width: 100%;
@@ -85,6 +93,10 @@
     border-style: none;
     outline: none;
     padding: 0 1.5rem;
+    border: 2px solid $dark;
+}
+.contain__input--search:hover{
+    border: 2px solid $cuadro;
 }
 .contain__input--input{
     width: 20%;
@@ -96,14 +108,19 @@
     width: 100%;
     height: 60vh;
     font-size: 1.6rem;
-    background-color: #048c80;
+    background-color: $white;
     overflow-y: scroll;
 }
 .frame__analisis{
     position: relative;
 }
+.titleAnalisis{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 .frame__analisis h2{
-    
     padding: .5rem 3rem;
     font-size: 2rem;
     width:100%;
@@ -112,12 +129,20 @@
 }
 .frame__analisis p {
     padding: 1.5rem 3rem;
-    color:$white;
+    font-weight: 500;
+    color:$dark;
 }
 
 .frame__info{
+    position: relative;
     width: 100%;
     margin: 0 auto;
+}
+.titleInfo{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .frame__info h2{
     width: 100%;
@@ -135,12 +160,12 @@
     text-align: center;
     font-weight: bold;
     text-decoration: none;
-    color:rgb(11, 102, 102);    
+    color:rgb(11, 102, 102);
 }
 .frame__info--ver{
     padding: .5rem 0;
 }
-.frame__info--btn a{
+.frame__info--btn button{
     padding: .3rem 1.5rem;
     border-radius: 2px;
     text-decoration: none;
@@ -149,12 +174,122 @@
     cursor: pointer;
     transition-property: background-color, color;
     transition-duration: .3s;
+    border: none;
 }
-.frame__info--btn a:hover{
+.frame__info--btn button:hover{
     color: $white;
     background-color: rgb(11, 102, 102);;
 }
-.frame__info--btn a i{
+.frame__info--btn button i{
     margin-right: 1rem;
     font-size: 1.5rem;
+}
+
+/*MODAL CHILDREN*/
+.contain__modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.contain__modal--description{
+    width: 100%;
+    height: 70%;
+    padding: 2rem;
+}
+.title__modal{
+    width: 80%;
+    padding-bottom: 2%;
+    font-size: 2rem;
+    border-bottom: 3px solid $cuadro;
+    color: $dark;
+}
+.subtitle__modal{
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $dark;
+}
+.valor__modal{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contain__modal--precio{
+    display: flex;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+}
+.precioModal{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 5% 0;
+    color: $white;
+    background-color: $cuadro;
+}
+
+@media only screen and(max-width:1024px){
+    .analisis__menu{
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-gap:.5rem;
+        width: 30%;
+        padding: 2rem 2rem;
+        overflow-y: scroll;
+    }
+    .menu__item--letter{
+        width: 60%;
+    }
+}
+@media only screen and(max-width:850px){
+    .menu__item--letter{
+        width: 70%;
+    }
+    .menu__item--letter button{
+        font-size: 2.5rem;
+    }
+}
+@media only screen and(max-width:650px){
+    .menu__item--letter{
+        width: 70%;
+    }
+    .menu__item--letter button{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and(max-width:550px){
+    .analisis__menu{
+        display: none;
+    }
+    .analisis__contain{
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    .contain__input label{
+        width: 80%;
+        margin-right: 1.5rem;
+        font-size: 1.8rem;
+        color: $white;
+    }
+}
+@media only screen and(max-width:420px){
+    .analisis__contain{
+        width: 100%;
+        padding: 2rem;
+    }
+    .contain__input label{
+        width: 90%;
+    }
+    .frame__analisis p {
+        padding: 1.5rem 1rem;
+        font-weight: 500;
+        color:$dark;
+    }
 }
